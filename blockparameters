@@ -1,0 +1,31 @@
+counter = 0
+array = [1,2,3,4,5]
+ 
+while array[counter] do
+  puts array[counter]
+  counter += 1
+end
+
+array = [1,2,3,4,5] 
+length = array.length
+
+length.times do |index|
+  puts array[index]
+end 
+
+# simpler code 
+
+array = [1,2,3,4,5]
+array.length.times { |index|
+  puts array[index]
+}
+
+array = [1,2,3,4,5]
+new_array = []
+
+array.length.times do |index|
+  new_array.push(array[index] + 1)
+end 
+new_array
+
+# => [2, 3, 4, 5, 6]

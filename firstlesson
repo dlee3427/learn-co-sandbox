@@ -1,0 +1,70 @@
+first_name = "Byronius"
+clan_name = "Karbitus" 
+common_name = "Maris" 
+
+full_name = first_name + " " + clan_name + " " + common_name 
+
+full_name = "#{first_name} #{clan_name} #{common_name}"
+
+fact = "Byron is " 
+tail = " years old" 
+age = 5 
+"#{fact} #{age} #{tail}"
+fact + age.to_s + tail 
+
+"#{fact} #{age} #{tail}" 
+
+DATA TYPES 
+
+10.class - Fixnum
+10.0.class - Float 
+true.class - TrueClass 
+false.class - FalseClass 
+"A Fellow of infinite jest".class - String
+:byron_the_poodle.class - Symbol 
+
+OPERATORS 
+4 % 2 - 0 
+5 % 2 - 1 
+
+TERNARY EXPRESSIONS 
+
+likely_to_rain = false 
+garment = likely_to_rain ? "galoshes" : "sun hat" 
+
+top = 2 
+bottom = 1 
+problem_count = 99 
+lucky_number = (top > bottom) ? ( 3+1 ) : ( problem_count / 3 )
+
+ARITHMETIC COMPARISONS 
+
+1 == 1 - TRUE 
+1 != 1 - FALSE 
+1 != 7 - TRUE 
+!true - false 
+!false - true 
+
+Ruby will treat anything that is false or nil as false, but everything else as true 
+
+false ? true : false  #=> false
+nil   ? true : false  #=> false
+ 
+6.7   ? true : false  #=> true
+1 + 1 ? true : false  #=> true
+0 ? true : false #=> true (!)
+:i_once_saw_a_poodle_play_racquetball ? true  : false  #=> true
+
+!!false - false 
+!!nil - false 
+!!6.7 - true 
+!!(1 + 1) - true 
+!!:i_once_saw_a_poodle_play_racquetball - true 
+
+BOOLEAN EXPRESSIONS 
+
+day_is_thursday = true 
+mom_is_not_home = true 
+day_is_thursday && mom_is_not_home ? "play scary video games" : "do homework" 
+
+false || true - true 
